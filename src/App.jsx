@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <main className=" w-full min-h-screen bg-black text-white d-flex ">
-        <div className="wrapper w-[45%] bg-[#1E3E62] min-h-[50vh] ">
+        <div className="wrapper w-[45%] max-md:w-full  bg-[#1E3E62] min-h-[50vh] ">
           <BrowserRouter>
             <Navbar />
             {/* <TodoList /> */}
