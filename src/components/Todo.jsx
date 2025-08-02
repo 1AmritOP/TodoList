@@ -21,7 +21,8 @@ const Todo = ({ title, detail, isCompleted, id }) => {
               onClick={() => dispatch(toggleCompleted(id))}
             />
           </div>
-          <section>
+          {/* if todo is completed then add line-through */}
+          <section className={`${isCompleted && "line-through"}`}>
             <h1 className=" text-xl font-bold"> {title} </h1>
             <p> {detail} </p>
           </section>
